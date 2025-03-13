@@ -62,6 +62,7 @@ c.Exchange.root = "/storage/home/hcodaman1/pkadekodi3/parentFolder/exchange" # c
     - normally, you should be able to by navigating to Nbgrader -> Create Assignment, but that option was greyed out, no matter which account I signed in with
 - There is no easy way to delete a course with nbgrader
     - you have to navigate to the course subdirectory, delete it, and then restart JupyterHub
+- You need to run the nbgrader executable from within each course directory
 
 ## Resources Used
 https://www.youtube.com/watch?v=e0DuCAqe8dU&t=285s - created by Professor Ben Zwickl
