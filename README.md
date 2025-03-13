@@ -6,12 +6,14 @@ Testing Nbgrader on behalf of Georgia Tech
 - within parentFolder, there should be an exchange directory (it can be called anything, but I'll refer to it as exchangeFolder)
     - the exchange folder is where files that need to be transferred between students and instructors are (for downloading/submitting assignments primarily)
 - also within parentFolder, there should be directories for each course - each course directory is a sibling to the other course directories and exchangeFolder
-- within each course directory, there should be 5 directories: source, released, submitted, autograded, feedback
-- nbgrader_config.py should be present in the course directory (not in any of the 5 subfolders within)
+- within each course directory, you should create a directory called source
+- a different copy of nbgrader_config.py should be present in each course directory (not in any of the subfolders within)
 
 ## nbgrader_config.py (needed for each course)
 ```python
 c = get_config()
+
+# this file could be stored in "/storage/home/hcodaman1/pkadekodi3/parentFolder/TESTCOURSE"
 
 c.CourseDirectory.course_id = "TESTCOURSE" # difference courses have different ids
 
